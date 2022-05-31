@@ -9,13 +9,14 @@
 </head>
 
 <body>
-    <h1>{{title}}</h1>
-    <nav>
-        <a routerLink="/dashboard">Dashboard</a>
-        <a routerLink="/heroes">Heroes</a>
-    </nav>
-    <router-outlet></router-outlet>
-    <app-messages></app-messages>
+    <h2>Top Heroes</h2>
+    <div class="heroes-menu">
+        <a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
+          {{hero.name}}
+      </a>
+    </div>
+
+    <app-hero-search></app-hero-search>
 </body>
 
 </html>
