@@ -3,8 +3,8 @@ import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-messages',
-  templateUrl: './messages.component.html',
-  styleUrls: ['./messages.component.css']
+  templateUrl: './message.component.html',
+  styleUrls: ['./message.component.css']
 })
 export class MessagesComponent implements OnInit {
 
